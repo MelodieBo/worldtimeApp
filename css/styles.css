@@ -1,0 +1,44 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.nuit {
+    background-image: url(../img/nuit.jpg);
+    background-size: cover;
+}
+
+.jour {
+    background-image: url(../img/jour.jpg);
+    background-size: cover;
+}
+
+
+h1 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.masthead {
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+}
+
+
+/* MEDIA QUERIES*/
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
