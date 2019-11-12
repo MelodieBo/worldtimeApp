@@ -103,7 +103,7 @@ let cityChoiceHonolulu = document.getElementById('cityChoiceHonolulu');
 cityChoiceHonolulu.addEventListener('click', () => {
 
     async function get() {
-        const response = await fetch('https://worldtimeapi.org/api/timezone/Pacific/Honolulu');
+        const response = await fetch('http://worldtimeapi.org/api/timezone/Pacific/Honolulu');
         let data = await response.json();
         let { datetime } = data;
         console.log(datetime);
@@ -115,17 +115,3 @@ cityChoiceHonolulu.addEventListener('click', () => {
     }
     get();   
 })
-
-// /*4 - Créer 3 boutons/liens dans la navigation :  
-// [PETIT] [MOYEN] [GROS]
-// exemple : cliquer sur petit provoque l'affichage des textes en font-size 12px, moyen : 16px, Gros : 24px*/
-
-// //PETIT
-// let smallSize = document.getElementById('small');
-// smallSize.addEventListener ('click', () => {
-
-//     function size() {
-
-        
-//     }
-// } )
