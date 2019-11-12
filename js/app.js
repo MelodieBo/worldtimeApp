@@ -103,7 +103,7 @@ let cityChoiceHonolulu = document.getElementById('cityChoiceHonolulu');
 cityChoiceHonolulu.addEventListener('click', () => {
 
     async function get() {
-        const response = await fetch('https://worldtimeapi.org/api/timezone/Pacific/Honolulu');
+        const response = await fetch('http://worldtimeapi.org/api/timezone/Pacific/Honolulu');
         let data = await response.json();
         let { datetime } = data;
         console.log(datetime);
