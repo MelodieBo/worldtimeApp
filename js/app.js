@@ -23,7 +23,7 @@ getTime.addEventListener('click', () => {
     console.log(valeur);
     //TODO: call api word time
     async function get() {
-        const response = await fetch('http://worldtimeapi.org/api/timezone/' + valeur);
+        const response = await fetch('https://worldtimeapi.org/api/timezone/' + valeur);
         let data = await response.json();
         let { datetime } = data;
         console.log(datetime);
@@ -47,7 +47,7 @@ let cityChoiceNYC = document.getElementById('cityChoiceNYC');
 cityChoiceNYC.addEventListener('click', () => {
 
     async function get() {
-        const response = await fetch('http://worldtimeapi.org/api/timezone/America/New_York');
+        const response = await fetch('https://worldtimeapi.org/api/timezone/America/New_York');
         let data = await response.json();
         let { datetime } = data;
         console.log(datetime);
@@ -66,7 +66,7 @@ let cityChoiceMelbourne = document.getElementById('cityChoiceMelbourne');
 cityChoiceMelbourne.addEventListener('click', () => {
 
     async function get() {
-        const response = await fetch('http://worldtimeapi.org/api/timezone/Australia/Melbourne');
+        const response = await fetch('https://worldtimeapi.org/api/timezone/Australia/Melbourne');
         let data = await response.json();
         let { datetime } = data;
         console.log(datetime);
@@ -85,7 +85,7 @@ let cityChoiceLondres = document.getElementById('cityChoiceLondon');
 cityChoiceLondon.addEventListener('click', () => {
 
     async function get() {
-        const response = await fetch('http://worldtimeapi.org/api/timezone/Europe/London');
+        const response = await fetch('https://worldtimeapi.org/api/timezone/Europe/London');
         let data = await response.json();
         let { datetime } = data;
         console.log(datetime);
@@ -103,7 +103,7 @@ let cityChoiceHonolulu = document.getElementById('cityChoiceHonolulu');
 cityChoiceHonolulu.addEventListener('click', () => {
 
     async function get() {
-        const response = await fetch('http://worldtimeapi.org/api/timezone/Pacific/Honolulu');
+        const response = await fetch('https://worldtimeapi.org/api/timezone/Pacific/Honolulu');
         let data = await response.json();
         let { datetime } = data;
         console.log(datetime);
