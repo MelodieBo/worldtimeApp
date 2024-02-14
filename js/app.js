@@ -7,7 +7,7 @@ const temp = (horaire) => {
     let nuitJour = parseInt(horaire, 10);
     console.log(nuitJour)
 
-    if ( nuitJour >= 21 || nuitJour <= 5) {
+    if ( nuitJour >= 20 || nuitJour <= 5) {
         document.body.classList.add('nuit');
         document.body.classList.remove('jour');
     } else {
